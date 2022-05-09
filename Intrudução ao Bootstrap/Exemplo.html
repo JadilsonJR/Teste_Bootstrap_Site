@@ -1,0 +1,396 @@
+<html lang="pt-br                                               ">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <title>FNews</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/carousel/">
+
+    
+
+    <!-- Bootstrap core CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+
+
+      
+      #barra_nav{
+        background-color: #1f2024;
+      }
+
+      #logo{
+        width: 7%;
+        border-radius: 10%;
+      }
+
+      #tam{
+          width: 100%;
+          height: 100vh;
+      }
+
+      #reduzir_IMG{
+        width: 400px;
+        
+      }
+
+      #Pistas{
+        background-color: #1F2024;
+      }
+
+      #card_cinza{
+        background-color: #79717A;
+      }
+
+      .caixa{
+        width: 30px;
+        height: 20px;
+      }
+
+      .justificar{
+        text-align: justify;
+      }
+
+
+      
+    </style>
+
+    
+    <!-- Custom styles for this template -->
+    <link href="carousel.css" rel="stylesheet">
+  </head>
+  <body>
+    
+  <header>
+    <!-- Barra de Navegação  -->
+    <nav id="barra_nav" class="navbar navbar-expand-md navbar-dark fixed-top ">
+      <div  class="container-fluid">
+        <img class="me-4" id="logo" src="logo.png"  href="#">
+        <a class="navbar-brand" href="#">FNews 2022</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarCollapse">
+          <ul class="navbar-nav me-auto mb-2 mb-md-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link " href="#Equipes">Equipes</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#Pistas">Pistas</a>
+            </li>
+          </ul>
+          <!-- BARRA DE PESQUISA <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Pesqiosar" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Pesquisar</button>
+          </form> -->
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+            <img src="IMG/Slide/Aston1.jpg" id="tam" class=" d-block ">
+          <div class="container">
+            <div class="carousel-caption text-start">
+              <h1 >Aston Martin AMR 22</h1>
+                <p class="text-secondary">Sebastian Vettel - Grande Premio da Australia</p>
+                <p><a class="btn btn-lg btn-outline-primary" href="#">Visualizar</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <img src="IMG/Slide/Red2.avif" id="tam" class=" d-block w-100 h-100">
+          <div class="container">
+            <div class="carousel-caption text-">
+              <h1>Red Bull RB18 headline.</h1>
+                <p>Checo Perez - Grande Premio de Miami 2022.</p>
+                <p><a class="btn btn-lg btn-primary" href="#">Visualizar</a></p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="carousel-item">
+          <img src="IMG/Slide/Mer3.jpg" id="tam" class=" d-block ">
+          <div class="container">
+            <div class="carousel-caption text-end">
+              <h1>Mercedes AMG W13</h1>
+                <p>George Russell - Grande Premio do Bahrain</p>
+                <p><a class="btn btn-lg btn-outline-primary" href="#">Visualizar</a></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+    <!-- Equipes -->
+
+    <article id="Equipes" class="container marketing border p-5 shadow ">
+      <h1 class="p-5"> Principais Equipes da Temporada 2022</h1>
+      <hr  class="featurette-divider">  
+      <div class="row featurette p-4">
+        <div class="col-md-7 text-justify">
+          <h2 class="featurette-heading">Mercedes-AMG Petronas Formula One Team. </h2>
+          <p class="lead justificar ">A Mercedes-Benz, por meio da Mercedes-Benz Grand Prix Limited, está atualmente envolvida na Fórmula 1 como equipe e construtor sob o nome Mercedes-AMG Petronas Formula One Team. A equipe está sediada em Brackley, Northamptonshire, Reino Unido e compete sob uma licença alemã.</p>
+        </div>
+        <div class="col-md-5">
+          <img id="reduzir_IMG" src="IMG/Logo_equipes/Mercedes_Logo.JPG">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette p-4">
+        <div class="col-md-7 order-md-2">
+          <h2 class="featurette-heading">Oracle Red Bull Racing </h2>
+          <p class="lead justificar">Chefiada por Christian Horner, a Red Bull Racing foi criada após a Red Bull comprar a Jaguar Racing em 2005. A equipe conseguiu uma rápida ascensão na Fórmula 1, conquistando o primeiro pódio com David Coulthard no GP de Mônaco de 2005. A primeira pole e vitória saíram com Vettel, em 2009. Nos quatro anos seguintes, a Red Bull conquistou o título do mundial de pilotos e construtores. Perdeu terreno em 2014 e, apesar de incomodar a Mercedes nos anos seguintes, só conseguiu o título do Mundial de Pilotos em 2021, com Max Verstappen.</p>
+        </div>
+        <div class="col-md-5 order-md-1">
+          <img id="reduzir_IMG" src="IMG/Logo_equipes/RedBull_Logo.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">
+
+      <div class="row featurette ">
+        <div class="col-md-7 p-4">
+          <h2 class="featurette-heading">Scuderia Ferrari</h2>
+          <p class="lead justificar">Equipe mais antiga e também a mais vencedora da Fórmula 1, a Ferrari competiu em todas as temporadas da categoria, e só deixou de disputar uma prova apenas uma vez, no GP da Grã-Bretanha de 1950, a primeira da história da F1. A equipe de Maranello também foi casa de alguns dos pilotos mais famosos da categoria como Michael Schumacher, Fangio, Alberto Ascari e Niki Lauda.</p>
+        </div>
+        <div class="col-md-5">
+          <img id="reduzir_IMG" src="IMG/Logo_equipes/Ferrari_Logo.png">
+        </div>
+      </div>
+
+      <hr class="featurette-divider">  
+
+    </article>
+
+
+    <!-- PISTAS  -->
+    <article id="Pistas" class="container col-lg-12 p-5 ">  
+      <h1 class="text text-white p-5"> Grande Premio da Temporada 2022</h1>
+      <h4 class="text text-white mt-5"> Legenda: </h4>
+        <div class="d-flex ">
+          <div class=" bg-danger caixa"> </div>
+          <p class=" ms-2 me-3 text-white">Corridas Realizadas</p>
+          <div class=" bg-success caixa"> </div>
+          <p class=" ms-2 me-3 text-white">Proxima Corrida</p>
+          <div id="card_cinza" class="caixa"> </div>
+          <p class=" ms-2 text-white"> Corridas que vão ser realizadas</p>
+        </div>
+        
+      <div class="row">
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div class="card-header bg-danger"> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Bahrein</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Bah.JPG">
+            </div>
+            <div class="card-body  ">
+              <p class="card-text justificar ">O Circuito Internacional do Barém é um autódromo localizado perto de Manama, no Barém. É conhecido por ser um dos circuitos mais modernizados da atualidade e por receber anualmente a Fórmula 1 desde 2004, com interrupção em 2011. </p>
+            </div>
+            <div class="card-footer bg-danger"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div class="card-header bg-danger"> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Jeddah Corniche </h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Arabia.JPG">
+            </div>
+            <div class="card-body ">
+              <p class="card-text justificar">O Circuito Corniche de Gidá é um circuito de rua na cidade de Gidá, na Arábia Saudita, próximo ao mar Vermelho. Este circuito de rua foi projetado para receber o Grande Prêmio da Arábia Saudita, que foi realizado pela primeira vez em 5 de dezembro de 2021. O circuito foi projetado pelo arquiteto alemão Hermann Tilke.</p>
+            </div>
+            <div class="card-footer bg-danger"></div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div class="card-header bg-danger"> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Austrália</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Australia.JPG">
+            </div>   
+            <div class="card-body  ">
+              <p class="card-text justificar">O Circuito de Albert Park é um circuito de rua localizado perto da cidade de Melbourne, capital do estado de Vitória na Austrália. Recebe a Fórmula 1 anualmente desde 1996. </p>
+            </div>
+            <div class="card-footer bg-danger"></div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div class="card-header bg-danger"> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Enzo e Dino Ferrari</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Emilia.JPG">
+            </div>
+            <div class="card-body  ">
+              <p class="card-text justificar">O Autódromo Internacional Enzo e Dino Ferrari é um circuito próximo à cidade italiana de Ímola, 40 km a leste de Bolonha e 80 km a leste da fábrica da Ferrari, em Maranello. Este Autódromo recebeu etapas da Fórmula 1 continuadamente, entre as temporadas de 1980 até 2006.</p>
+            </div>
+            <div class="card-footer bg-danger"></div>
+          </div>
+        </div><!-- /.col-lg-4 -->
+
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div class="card-header bg-success"> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Miami</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Miami.JPG">
+            </div>
+            <div class="card-body  ">
+              <p class="card-text justificar">O Autódromo Internacional de Miami será um circuito de rua planejado ao redor do Hard Rock Stadium em Miami Gardens, Flórida, Estados Unidos. A pista deve ter 5,41 quilômetros de comprimento e 19 curvas, com uma velocidade média de 222 km/h. </p>
+            </div>
+            <div class="card-footer bg-success"></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div id="card_cinza" class="card-header "> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Espanha</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Espanha.JPG">
+            </div>
+            
+            <div class="card-body">
+              <p class="card-text justificar">O Circuito de Barcelona-Catalunha ou simplesmente Circuito da Catalunha é um circuito na cidade catalã de Montmeló. É a sede anual do Grande Prêmio da Espanha de Fórmula 1, do Grande Prêmio da Catalunha de MotoGP. O circuito tem um comprimento total de 4.655 metros divididos em 66 voltas totalizando 307.104 metros.</p>
+            </div>
+            <div id="card_cinza" class="card-footer "></div>
+          </div>
+        </div>
+
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div id="card_cinza" class="card-header "> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Mônaco</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Monaco.JPG">
+            </div>
+            <div class="card-body">
+              <p class="card-text justificar">O Circuito de Mônaco é um circuito de rua na cidade de Monte Carlo, no Principado de Mônaco, mais conhecido por sediar anualmente o Grande Prêmio de Mônaco de Fórmula 1.</p>
+            </div>
+            <div id="card_cinza" class="card-footer "></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div id="card_cinza" class="card-header "> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Alzerbaijan</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Alzerbaijan.JPG">
+            </div>
+            <div class="card-body">
+              <p class="card-text justificar">O Circuito Urbano de Bacu é um circuito de rua na cidade de Bacu, capital do Azerbaijão, que sediou o Grande Prêmio da Europa de Fórmula 1 em 2016. A partir de 2017, o circuito passou a sediar o Grande Prêmio do Azerbaijão.</p>
+            </div>
+            <div id="card_cinza" class="card-footer "></div>
+          </div>
+        </div>
+
+        <div class="col-lg-4 p-5">
+          <div class="card border border-0">
+            <div id="card_cinza" class="card-header "> </div>
+            <div class="card-header">
+              <h3 class="card-title">GP Canadá</h3>
+            </div>
+            <div class="caixa_img_pista"> 
+              <img class="card-img" src="IMG/Pistas/Canada.JPG">
+            </div>
+            <div class="card-body">
+              <p class="card-text justificar">O Circuito Gilles Villeneuve é um circuito localizado na Ilha de Notre Dame, na cidade de Montreal, maior cidade da província de Quebec, no Canadá. É a sede anual do Grande Prêmio do Canadá de Fórmula 1 desde 1978. Recebeu esse nome em homenagem ao piloto Gilles Villeneuve.</p>
+            </div>
+            <div id="card_cinza" class="card-footer "></div>
+          </div>
+        </div>
+
+        <p><a class="btn btn-lg btn-primary" href="#">Ler Mais</a></p>
+      </div>
+    </article>
+  </main>
+ <!-- FOOTER -->
+  <footer class="bg-dark text-center text-white ">
+    <!-- Grid container -->
+    <div class="container p-4 mt-5 pb-0">
+      <!-- Section: Social media -->
+      
+      <section class="mb-4">  </section>
+    </div>
+   
+    <div class="container-fluid p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      <p>Desenvolvido por <a class="text-white" href="https://github.com/JadilsonJR">Jadilson Junior </a> <br> Disciplina Multimidia para Internet - Site criado no Intuito acadêmico </p>  
+    </div>
+    
+  </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+   </body>
+</html>
